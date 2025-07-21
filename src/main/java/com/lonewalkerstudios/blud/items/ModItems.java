@@ -10,7 +10,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
 
-public static final Item BLUD_WOOD = registerItem(new Item (new Item.Settings()));
+public static final Item BLUD_LOG = registerItem(new Item (new Item.Settings()));
     private static Item registerItem(Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Blud.MOD_ID, "blud_wood"),item);
     }
@@ -19,7 +19,7 @@ public static final Item BLUD_WOOD = registerItem(new Item (new Item.Settings())
         Blud.LOGGER.info("Killllll myselffffff" + Blud.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(fabricItemGroupEntries -> {
-            fabricItemGroupEntries.add(BLUD_WOOD);
+            fabricItemGroupEntries.add(BLUD_LOG);
         });
     }
 }
